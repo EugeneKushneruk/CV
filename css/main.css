@@ -1,0 +1,340 @@
+/*     Font styles     */
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'norwesterregular';
+    src: url("../fonts/norwester-webfont.woff2") format("woff2"), url("../fonts/norwester-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*     Page styles     */
+
+
+/*     Desktop and Laptops     */
+
+@media only screen and (min-width: 1025px) {
+    .body {
+        font-size: 100%;
+        background: url("../img/SVG/8.svg") repeat top center/80%;
+    }
+    .wrapper {
+        width: 1088px;
+        margin: 0 auto;
+    }
+    .header {
+        width: 100%;
+        height: 360px;
+        padding-right: 50px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myName {
+        text-transform: uppercase;
+    }
+    .myName__greetings {
+        font-family: "norwesterregular", sans-serif;
+    }
+    .myName__greetings-lowText {
+        font-size: 3em;
+    }
+    .myName__greetings-HighText {
+        font-size: 4.625em;
+    }
+    .myName__speciality {
+        font-family: "montserratlight", sans-serif;
+        font-size: 1.25em;
+        letter-spacing: 0.3em;
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: white;
+    }
+    .main__leftCol {
+        width: 40%;
+        height: 1176px;
+        display: inline-block;
+        padding-top: 80px;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .main__rightCol {
+        width: 60%;
+        height: 1176px;
+        display: inline-block;
+        padding-top: 80px;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .section {
+        width: 85%;
+        margin: 0 auto 50px;
+    }
+    .footer {
+        width: 100%;
+        height: 43px;
+    }
+}
+
+
+/*     iPads (portrait and landscape)     */
+
+@media only screen and (min-width: 737px) and (max-width: 1024px) {
+    .body {
+        font-size: 100%;
+        background: url("../img/background-tablets.jpg") no-repeat top center/cover;
+    }
+    .wrapper {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .header {
+        width: 100%;
+        height: 360px;
+        padding-right: 50px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .myName {
+        text-transform: uppercase;
+    }
+    .myName__greetings {
+        font-family: "norwesterregular", sans-serif;
+    }
+    .myName__greetings-lowText {
+        font-size: 3em;
+    }
+    .myName__greetings-HighText {
+        font-size: 4.625em;
+    }
+    .myName__speciality {
+        font-family: "montserratlight", sans-serif;
+        font-size: 1.25em;
+        letter-spacing: 0.3em;
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: -webkit-gradient(linear, left top, right top, color-stop(40%, #425370), color-stop(25%, white));
+        background: -webkit-linear-gradient(left, #425370 40%, white 25%);
+        background: linear-gradient(90deg, #425370 40%, white 25%);
+    }
+    .main__leftCol {
+        width: 40%;
+        height: auto;
+        display: inline-block;
+        padding-top: 80px;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .main__rightCol {
+        width: 60%;
+        height: auto;
+        display: inline-block;
+        padding-top: 80px;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .section {
+        width: 85%;
+        margin: 0 auto 50px;
+    }
+    .footer {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+.wrapper_theme_shadowed {
+    -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header_theme_dark-blue {
+    color: white;
+    text-shadow: 4px 4px 15px black;
+    background-color: #003454;
+}
+
+.header__image {
+    float: left;
+    width: 50%;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+}
+
+.header__image-developer {
+    width: 95%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.header__myName {
+    float: right;
+    width: 50%;
+    height: 360px;
+    padding-top: 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main__leftCol_theme_blue {
+    color: white;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #425370;
+}
+
+.contact__list .contact__list-item {
+    height: 35px;
+    font-size: 1em;
+    font-family: 'montserratlight', sans-serif;
+    line-height: 35px;
+    padding-left: 50px;
+}
+
+.contact__list-item_background_folder {
+    background: url("../img/gitAndPort.svg") no-repeat -66px -127px/175px;
+}
+
+.contact__list-item_background_git {
+    background: url("../img/gitAndPort.svg") no-repeat -65px -17px/175px;
+}
+
+.contact__list-item_background_phone {
+    background: url("../img/contact-white-pattern.svg") no-repeat -72px -10px/180px;
+}
+
+.contact__list-item_background_telegram {
+    background: url("../img/contact-white-pattern.svg") no-repeat -74px -189px/180px;
+}
+
+.contact__list-item_background_email {
+    background: url("../img/contact-white-pattern.svg") no-repeat -71px -154px/180px;
+}
+
+.contact__list-item_background_facebook {
+    background: url("../img/contact-white-pattern.svg") no-repeat -71px -81px/180px;
+}
+
+.contact__list-item_background_linkedin {
+    background: url("../img/contact-white-pattern.svg") no-repeat -71px -117px/180px;
+}
+
+.hobbies .hobbie__block {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid white;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+}
+
+.hobbie__block_background_reading {
+    width: 40px;
+    height: 40px;
+    background: url("../img/hobbies-white-pattern.svg") no-repeat -56px -5px/220px;
+}
+
+.hobbie__block_background_programming {
+    width: 40px;
+    height: 40px;
+    background: url("../img/hobbies-white-pattern.svg") no-repeat -56px -98px/220px;
+}
+
+.hobbie__block_background_kayak {
+    width: 40px;
+    height: 40px;
+    background: url("../img/hobbies-white-pattern.svg") no-repeat -124px -8px/220px;
+}
+
+.hobbie__block_background_guitar {
+    width: 40px;
+    height: 40px;
+    background: url("../img/hobbies-white-pattern.svg") no-repeat -124px -52px/220px;
+}
+
+.main__rightCol_theme_white {
+    color: #003454;
+    background-color: white;
+}
+
+.list {
+    margin-top: 10px;
+}
+
+.list .list__item {
+    font-size: 1.25em;
+    font-family: 'montserratlight', sans-serif;
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.h1 {
+    font-size: 2em;
+    font-family: 'norwesterregular', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-size: 1.25em;
+    font-family: 'montserratlight', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.p {
+    font-size: 1.25em;
+    font-family: 'montserratlight', sans-serif;
+}
+
+.p_style_uppercase-no-mrgn, .p_style_uppercase {
+    text-transform: uppercase;
+}
+
+.p_style_uppercase {
+    margin-bottom: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bold-span {
+    font-weight: bold;
+}
+
+.footer_theme_metall {
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    background: #646464 -webkit-radial-gradient(0 0, circle, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.35));
+    background: #646464 radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.35));
+}
+
+.footer_link {
+    margin-left: 100px;
+    font-size: 1.5em;
+    line-height: 40px;
+    font-variant: small-caps;
+}
